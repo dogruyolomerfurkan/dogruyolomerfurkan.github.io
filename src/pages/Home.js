@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
+
 function Home() {
     return (
-        <div>Ömer Furkan Doğruyol Home Page</div>
+        <>
+            <Link to="/about">About Page</Link>
+            <Link to="*">Not Found Page</Link>
+            <div>Ömer Furkan Doğruyol Home Page</div>
+        </>
     )
 }
 

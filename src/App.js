@@ -1,4 +1,4 @@
-import RouterBase from "router/RouterBase"
+import RouterBase from "./router/RouterBase"
 
 function App() {
   return (

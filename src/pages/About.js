@@ -1,6 +1,9 @@
 function About() {
     return (
-        <div>Ömer Furkan Doğruyol About Page</div>
+        <>
+            <div>Ömer Furkan Doğruyol About Page</div>
+            <p>HELLO</p>
+        </>
     )
 }
 

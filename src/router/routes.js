@@ -1,7 +1,7 @@
 import React from 'react'
-const About = React.lazy(() => import('pages/About'))
-const Home = React.lazy(() => import('pages/Home'))
-const NotFound = React.lazy(() => import('pages/NotFound'))
+const About = React.lazy(() => import('../pages/About'))
+const Home = React.lazy(() => import('../pages/Home'))
+const NotFound = React.lazy(() => import('../pages/NotFound'))
 
 export const routes = [
     {
