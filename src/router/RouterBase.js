@@ -1,5 +1,5 @@
 import React, { Suspense } from "react"
-import { BrowserRouter, HashRouter, useRoutes } from 'react-router-dom'
+import { HashRouter, useRoutes } from 'react-router-dom'
 import { routes } from './routes'
 const Routes = () => {
     const elements = useRoutes(routes)
