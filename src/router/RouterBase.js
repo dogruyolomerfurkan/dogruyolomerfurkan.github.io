@@ -1,5 +1,5 @@
 import React, { Suspense } from "react"
-import { BrowserRouter, useRoutes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, useRoutes } from 'react-router-dom'
 import { routes } from './routes'
 const Routes = () => {
     const elements = useRoutes(routes)
@@ -7,11 +7,11 @@ const Routes = () => {
 }
 function RouterBase() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Suspense fallback='...Loading'>
                 <Routes />
             </Suspense>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
