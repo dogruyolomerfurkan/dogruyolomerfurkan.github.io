@@ -1,17 +1,17 @@
 import React, { Suspense } from "react"
-import { HashRouter, useRoutes } from 'react-router-dom'
+import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { routes } from './routes'
 const Routes = () => {
-    const elements = useRoutes(routes);
-    return elements;
+    const elements = useRoutes(routes)
+    return elements
 }
 function RouterBase() {
     return (
-        <HashRouter hashType='noslash' basename="/">
+        <BrowserRouter>
             <Suspense fallback='...Loading'>
                 <Routes />
             </Suspense>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 
